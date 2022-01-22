@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Transaction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="static/cssfiles/s-transactions.css">
+</head>
+<body>
+	<nav class="navbar navbar-style">
+		<div class="navbar header">
+			<a class="navbar-brand" href="#"> <img class="logo" src="static/imgfiles/logo.png"></a>
+			<h1 style="font-size: 40px;font-family: sans-serif;color: rgb(5, 5, 5);">STUDENT TRANSACTION</h1>
+		</div>
+    
+        </nav>  
+
+    <div style="overflow-x:auto;" class="col-sm-12">
+    <table class="table table-bordered table-dark table-hover">
+<thead>
+    <th>LRN</th>
+    <th>Name of Student</th>
+    <th>Parent/Guardian</th>
+    <th>Contact Number</th>
+    <th>Date</th>
+    <th>Status</th>
+</thead>
+    <tbody>
+        <tr>
+            <td>001</td>
+            <td>Juan</td>
+            <td>Mary</td>
+            <td>9090</td>
+            <td>02/02/2000</td>
+            <td>Submitted</td>
+        </tr>
+            <tr>
+                <td>002</td>
+                <td>Juan</td>
+                <td>Mary</td>
+                <td>9090</td>
+                <td>02/02/2000</td>
+                <td>Submitted</td>
+            </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Juan</td>
+                    <td>Mary</td>
+                    <td>9090</td>
+                    <td>02/02/2000</td>
+                    <td>Submitted</td>
+                </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Juan</td>
+                        <td>Mary</td>
+                        <td>9090</td>
+                        <td>02/02/2000</td>
+                        <td>Submitted</td>
+                    </tr>
+                        <tr>
+                            <td>005</td>
+                            <td>Juan</td>
+                            <td>Mary</td>
+                            <td>9090</td>
+                            <td>02/02/2000</td>
+                            <td>Submitted</td>
+                        </tr>
+    </tbody>
+  </table>
+  <div class="container">
+    <form id="frm" action="">
+    <a href="adminhomepage.html" class="btn btn-primary btn-hover" role="button">Back</a>
+    <input type="text" class="form-control-sm float-md-right" id="usr">
+    <input type="button" onclick="myFunction()" value="Search" class="btn btn-success float-sm-right"><br><br>
+    </form>
+    <script>
+        function myFunction()
+        {document.getElementById("frm").submit();}
+    </script>
+  </div>
+
+</body>
+</html>

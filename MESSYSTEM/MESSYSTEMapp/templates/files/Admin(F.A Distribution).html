@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin(F.A Distribution)</title>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static/cssfiles/admin.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+        ul.topnav {
+                  list-style-type: none;
+                  margin: 0;
+                  overflow: hidden;
+                  background-color: blanchedalmond;
+                }
+
+                ul.topnav li {float: left;}
+
+                ul.topnav li a {
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 4px 4px;
+                  text-decoration: none;
+                }
+
+                ul.topnav li a:hover:not(.active) {background-color: #111;}
+                ul.topnav li.right {float: right; }
+
+                @media screen and (max-width: 100px) {
+                  ul.topnav li.right, 
+                  ul.topnav li {float: none;}
+                }
+    </style>
+</head>
+<body>
+    <ul class="topnav">
+      <li><a><img class="logo" src="static/imgfiles/logo.png"></a></li>
+      <li><a style="pointer-events: none"><p style="font-size: 28px;">Distribution of Financial Assistance</p></a></li>
+    </ul>
+
+    
+    <div class="container-fluid"><Br>
+            <div class="row">
+                <div style="overflow-x:hidden;" class="col-sm-7">
+                    <table class="table table-bordered table-dark table-hover">
+                <thead>
+                    <th>Approved Students</th>
+                    <th>LRN</th>
+                    <th>Grade</th>
+                    <th>Section</th>
+                    <th>Assistance Amount</th>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>001</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+                            <tr>
+                                <td></td>
+                                <td>002</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            
+                            </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>003</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                
+                                </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>004</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                
+                                    </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>005</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        
+                                        </tr>
+                                        
+                    </tbody>
+                </table>
+                
+                </div>
+                <div class="col-sm-4">
+                    <form id="frm1" action="" onsubmit="return Validate()">
+                    <div  class="col-sm-12">
+				<div class="row">
+					<div class="col-xs-4">
+						<label class="student">Student :</label> </div>
+					<div id="student_div" class="col-xs-8">
+						<input type="text" name="student" id="student" placeholder="Name" class="form-control-sm float-sm-right" size="47">
+						<div id="student_error"></div>
+					</div>
+				</div>
+			</div>
+                    <br>
+                    <div  class="col-sm-12">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="lrn">LRN :</label> </div>
+                            <div id="lrn_div" class="col-xs-8">
+                                <input type="text" name="lrn" id="lrn" placeholder="LRN" class="form-control-sm float-sm-right" size="50">
+                                <div id="lrn_error"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div  class="col-sm-12">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="grade"> Grade:</label>
+                            </div><br><br>
+                            <div id="grade_div" class="col-xs-8">
+                                <select name="grade" id="grade" class="form-control" >
+                                  <option value="" disabled selected hidden>Grade</option>
+                                  <option value="1">Grade 1</option>
+                                  <option value="2">Grade 2</option>
+                                  <option value="3">Grade 3</option>
+                                  <option value="4">Grade 4</option>
+                                  <option value="5">Grade 5</option>
+                                  <option value="6">Grade 6</option>
+                                </select>
+                                <div id="grade_error"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div  class="col-sm-12">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="section"> Section:</label>
+                            </div><br><br>
+                            <div id="section_div" class="col-xs-8">
+                                <select name="section" id="section" class="form-control">
+                                    <option value="" disabled selected hidden>Section</option>
+                                    <option value="1">Mango</option>
+                                    <option value="2">Grapes</option>
+                                    <option value="3">Lemon</option>
+                                    <option value="4">Melon</option>
+                                    <option value="5">Apple</option>
+                                    <option value="6">Berry</option>
+                                </select>
+                                <div id="section_error"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div  class="col-sm-12">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="assistance"> Assistance Amount:</label>
+                            </div>
+                            <div id="assistance_div" class="col-xs-8">
+                                <select name="assistance" id="assistance" class="form-control">
+                                    <option value="" disabled selected hidden>Amount</option>
+                                <option value="1">1000</option>
+                                <option value="2">2000</option>
+                                <option value="3">3000</option>    
+                                </select>
+                                <div id="assistance_error"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <input type="submit" onclick="myFunction()" value="Save" class="btn btn-success float-sm-right">
+                    <input type="button" onclick="myFunction1()" value="Clear" class="btn btn-primary float-sm-left">
+                    </form>
+
+                    <script>
+                        function myFunction1()
+                        {document.getElementById("frm1").reset();}
+                    </script>
+                    <script>
+                        var student = document.forms['frm1']['student'];
+                        var student_error = document.getElementById('student_error');
+                        var lrn = document.forms['frm1']['lrn'];
+                        var lrn_error = document.getElementById('lrn_error');
+                        var grade = document.forms['frm1']['grade'];
+                        var grade_error = document.getElementById('grade_error');
+                        var section = document.forms['frm1']['section'];
+                        var section_error = document.getElementById('section_error');
+                        var assistance = document.forms['frm1']['assistance'];
+                        var assistance_error = document.getElementById('assistance_error');
+
+                        function Validate() {
+                            if (student.value != "") {
+                                student.style.border = "1px solid #5e6e66";
+                                document.getElementById('student_div').style.color = "#5e6e66";
+                                student_error.innerHTML = "";
+                            } 
+                      
+                            if (student.value == "") {
+                              student.style.border = "1px solid red";
+                              document.getElementById('student_div').style.color = "red";
+                              student_error.textContent = "Name is required";
+                              student.focus();
+                              return false;
+                            }
+                            if (lrn.value != "") {
+                                lrn.style.border = "1px solid #5e6e66";
+                                document.getElementById('lrn_div').style.color = "#5e6e66";
+                                lrn_error.innerHTML = "";
+                            } 
+                      
+                            if (lrn.value == "") {
+                              lrn.style.border = "1px solid red";
+                              document.getElementById('lrn_div').style.color = "red";
+                              lrn_error.textContent = "LRN is required";
+                              lrn.focus();
+                              return false;
+                            }
+                            if (grade.selectedIndex < 1) {
+                              grade.style.border = "1px solid red";
+                              document.getElementById('grade_div').style.color = "red";
+                              grade_error.textContent = "Grade is required";
+                              grade.focus();
+                              return false;
+                            }
+
+                            if (grade.value != "") {
+                              grade.style.border = "1px solid #5e6e66";
+                              document.getElementById('grade_div').style.color = "#5e6e66";
+                              grade_error.innerHTML = "";
+                            }
+                            if (section.selectedIndex < 1) {
+                                section.style.border = "1px solid red";
+                                document.getElementById('section_div').style.color = "red";
+                                section_error.textContent = "Section is required";
+                                section.focus();
+                                return false;
+                            }
+  
+                              if (section.value != "") {
+                                section.style.border = "1px solid #5e6e66";
+                                document.getElementById('section_div').style.color = "#5e6e66";
+                                section_error.innerHTML = "";
+                            }
+                            if (assistance.selectedIndex < 1) {
+                                assistance.style.border = "1px solid red";
+                                document.getElementById('assistance_div').style.color = "red";
+                                assistance_error.textContent = "Amount is required";
+                                assistance.focus();
+                                return false;
+                              }
+  
+                              if (assistance.value != "") {
+                                assistance.style.border = "1px solid #5e6e66";
+                                document.getElementById('assistance_div').style.color = "#5e6e66";
+                                assistance_error.innerHTML = "";
+                              }
+
+                        }
+                    </script>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>  
+    <div class="container-fluid">
+        <a href="Admin(Financial Assistance).html" class="btn btn-primary btn-hover" role="button">Back</a>
+        
+    </div>
+</body>
+</html>

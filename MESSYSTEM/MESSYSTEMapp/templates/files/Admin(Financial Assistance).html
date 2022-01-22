@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin(Student Reports)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="static/cssfiles/admin1.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#"><img class="logo" src="static/imgfiles/logo.png">Student Reports</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar=toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Grade Level</a>
+        <div class="dropdown-menu" aria-labeledby="navbarDropdown">
+        <a class="dropdown-item" href="#">1</a>
+        <a class="dropdown-item" href="#">2</a>
+        <a class="dropdown-item" href="#">3</a>
+        <a class="dropdown-item" href="#">4</a>
+        <a class="dropdown-item" href="#">5</a>
+        <a class="dropdown-item" href="#">6</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Section</a>
+        <div class="dropdown-menu" aria-labeledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Mango</a>
+        <a class="dropdown-item" href="#">Grapes</a>
+        <a class="dropdown-item" href="#">Lemon</a>
+        <a class="dropdown-item" href="#">Melon</a>
+        <a class="dropdown-item" href="#">Apple</a>
+        <a class="dropdown-item" href="#">Berry</a>
+        </li>
+        </div>
+    </div>
+    </nav>
+
+    <div style="overflow-x:auto;">
+    <table class="table table-bordered table-dark table-hover">
+<thead>
+    <th>LRN</th>
+    <th>Name of Student</th>
+    <th>Parent/Guardian</th>
+    <th>Contact Number</th>
+    <th>Date</th>
+    <th>Status</th>
+</thead>
+    <tbody>
+        <tr>
+            <td>001</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+            <tr>
+                <td>002</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+                <tr>
+                    <td>003</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                        <td>004</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr>
+                            <td>005</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+    </tbody>
+  </table>
+    </div>
+  <div class="container">
+    <form id="frm" action="">
+    <a href="adminhomepage.html" class="btn btn-primary btn-hover" role="button">Back</a>
+    <input type="text" class="form-control-sm float-sm-right" id="usr">
+    <input type="button" onclick="myFunction1()" value="Search" class="btn btn-success float-sm-right"><br><br>
+    
+    </form>
+    <input type="button" onclick="myFunction()" value="Approve" class="btn btn-success float-sm-right"><br><br>
+  <a href="Admin(F.A Distribution).html" class="btn btn-primary float-sm-right" role="button">Financial Assistance</a>
+    <script>
+    function myFunction()
+    {document.getElementById("frm").submit();}
+    </script>
+    <script>
+        function myFunction1()
+        {document.getElementById("frm").submit();}
+    </script>
+  </div>
+  
+</body>
+</html>
